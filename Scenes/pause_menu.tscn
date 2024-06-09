@@ -1,0 +1,90 @@
+[gd_scene load_steps=5 format=3 uid="uid://dpsnfcp3qg8kr"]
+
+[ext_resource type="Theme" uid="uid://b806d6t2kh6bk" path="res://Resources/Main_menu_theme.tres" id="1_5yxls"]
+[ext_resource type="Texture2D" uid="uid://cgv2bexklvgyh" path="res://Assets/Textures/uibanner.png" id="2_0umwg"]
+[ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="2_qebs7"]
+[ext_resource type="PackedScene" uid="uid://xr5ryvlrtclp" path="res://Scenes/paused_options_menu.tscn" id="4_f1xhv"]
+
+[node name="Pause_Menu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_5yxls")
+script = ExtResource("2_qebs7")
+
+[node name="ResumeButton" type="Button" parent="."]
+z_index = 8
+layout_mode = 0
+offset_left = 55.0
+offset_top = 56.0
+offset_right = 189.0
+offset_bottom = 82.0
+theme_override_font_sizes/font_size = 12
+text = "Resume"
+
+[node name="OptionsButton" type="Button" parent="."]
+z_index = 8
+layout_mode = 0
+offset_left = 55.0
+offset_top = 90.0
+offset_right = 189.0
+offset_bottom = 116.0
+theme_override_font_sizes/font_size = 12
+text = "Options"
+
+[node name="QuitButton" type="Button" parent="."]
+z_index = 8
+layout_mode = 0
+offset_left = 55.0
+offset_top = 125.0
+offset_right = 189.0
+offset_bottom = 151.0
+theme_override_font_sizes/font_size = 12
+text = "Quit"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+z_index = 7
+layout_mode = 0
+offset_left = 55.0
+offset_top = 11.0
+offset_right = 189.0
+offset_bottom = 162.0
+texture = ExtResource("2_0umwg")
+patch_margin_left = 15
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 15
+
+[node name="Label" type="Label" parent="."]
+z_index = 8
+layout_mode = 0
+offset_left = 59.0
+offset_top = 14.0
+offset_right = 186.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0.466667, 0.223529, 0.137255, 1)
+text = "Paused"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = 6
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.101961, 0.101961, 0.101961, 0.239216)
+
+[node name="Paused_Options_Menu" parent="." instance=ExtResource("4_f1xhv")]
+visible = false
+layout_mode = 1
+
+[connection signal="pressed" from="ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

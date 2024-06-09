@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://hmlim2awm4ct"]
+
+[ext_resource type="PackedScene" uid="uid://7u8qkfmhb7cg" path="res://Scenes/nox.tscn" id="1_y5t0p"]
+
+[node name="Nox" instance=ExtResource("1_y5t0p")]
+
+[node name="NinePatchRect" parent="." index="2"]
+offset_left = -59.0
+offset_top = -36.0
+offset_right = 60.0
+offset_bottom = -6.0
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" parent="NinePatchRect" index="0"]
+offset_left = 11.0
+offset_top = 9.0
+offset_right = 149.0
+offset_bottom = 51.0
+text = "Well done!"

@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbgbh754d0huw"]
+
+[ext_resource type="PackedScene" uid="uid://vnyq4nrq75no" path="res://Scenes/display_button.tscn" id="1_cm80o"]
+[ext_resource type="Script" path="res://Scripts/resolution_button.gd" id="2_aeeyc"]
+
+[node name="Resolution_Button" instance=ExtResource("1_cm80o")]
+script = ExtResource("2_aeeyc")
+
+[node name="Label" parent="." index="0"]
+offset_left = 48.0
+offset_top = 42.0
+offset_right = 134.0
+offset_bottom = 65.0
+scale = Vector2(1.06265, 1.14787)
+theme_override_colors/font_color = Color(0.305882, 0.196078, 0.0823529, 1)
+text = "Resolution"
+
+[node name="OptionButton" parent="." index="1"]
+offset_left = 50.0
+offset_top = 72.0
+offset_right = 95.0
+offset_bottom = 92.0
+scale = Vector2(1.95614, 1.59715)
+theme_override_colors/font_color = Color(0.384314, 0.227451, 0.168627, 1)

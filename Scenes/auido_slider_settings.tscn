@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://cj0lxkxh3xmj0"]
+
+[ext_resource type="Script" path="res://Scripts/auido_slider_settings.gd" id="1_dm2gg"]
+[ext_resource type="FontFile" uid="uid://bf4148820ipgg" path="res://Assets/prstart.ttf" id="1_oa8g5"]
+
+[node name="Auido_Slider_Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.00191, 1.00569)
+size_flags_horizontal = 0
+script = ExtResource("1_dm2gg")
+bus_name = "Master"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 135.0
+offset_bottom = 40.0
+scale = Vector2(2.3655, 4.4754)
+theme_override_constants/separation = 5
+
+[node name="Audio_Name_Label" type="Label" parent="HBoxContainer"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.454902, 0.262745, 0.109804, 1)
+theme_override_fonts/font = ExtResource("1_oa8g5")
+theme_override_font_sizes/font_size = 5
+text = "Master Volume"
+
+[node name="HSlider" type="HSlider" parent="HBoxContainer"]
+custom_minimum_size = Vector2(50, 20)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.001
+
+[node name="Audio_Number_Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.490196, 0.262745, 0.168627, 1)
+theme_override_fonts/font = ExtResource("1_oa8g5")
+theme_override_font_sizes/font_size = 5
+text = "33"

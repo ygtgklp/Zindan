@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://n7eoan3du7br"]
+
+[ext_resource type="PackedScene" uid="uid://cbwu1eatctvi5" path="res://Scenes/fluffy.tscn" id="1_jxosd"]
+
+[node name="Fluffy" instance=ExtResource("1_jxosd")]
+
+[node name="NinePatchRect" parent="." index="2"]
+offset_left = -59.0
+offset_top = -22.0
+offset_right = 66.0
+offset_bottom = -2.0
+
+[node name="RichTextLabel" parent="NinePatchRect" index="0"]
+anchor_left = -0.179586
+anchor_top = -0.411765
+anchor_right = -0.179586
+anchor_bottom = -0.411765
+offset_left = 33.4483
+offset_top = 14.2353
+text = "You've made it!"

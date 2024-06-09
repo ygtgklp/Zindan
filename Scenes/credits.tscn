@@ -1,0 +1,239 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3r1g6e70eckj"]
+
+[ext_resource type="Script" path="res://Scripts/credits.gd" id="1_5et8a"]
+[ext_resource type="Theme" uid="uid://b4m7fsy36wfy0" path="res://Resources/credits_theme.tres" id="2_dg1hh"]
+[ext_resource type="Texture2D" uid="uid://crpktjd7ys4ti" path="res://Assets/Textures/separator.png" id="3_bkryh"]
+[ext_resource type="Theme" uid="uid://dfya1uwospu2r" path="res://Resources/Settings_theme.tres" id="5_lfe2l"]
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5et8a")
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(200, 170)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_dg1hh")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 15.0
+offset_right = 168.0
+offset_bottom = 38.0
+text = "
+Yigit Gökalp"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 41.0
+offset_right = 187.0
+offset_bottom = 64.0
+text = "
+The White Kitty by Rolemusic
+Free Music Archive, CC BY"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 67.0
+offset_right = 187.0
+offset_bottom = 90.0
+text = "
+The White by Rolemusic
+Free Music Archive, CC BY"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 104.0
+offset_right = 128.0
+offset_bottom = 127.0
+theme_override_font_sizes/font_size = 3
+text = "
+aamatniekss on itch.io"
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 104.0
+offset_right = 206.0
+offset_bottom = 127.0
+theme_override_font_sizes/font_size = 3
+text = "
+Szadi art. on itch.io"
+horizontal_alignment = 1
+
+[node name="Label6" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 124.0
+offset_right = 129.0
+offset_bottom = 147.0
+theme_override_font_sizes/font_size = 3
+text = "
+Sr.Toasty on itch.io"
+horizontal_alignment = 1
+
+[node name="Label7" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 140.0
+offset_right = 168.0
+offset_bottom = 163.0
+theme_override_font_sizes/font_size = 3
+text = "
+Ramen on itch.io"
+horizontal_alignment = 1
+
+[node name="Label8" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 134.0
+offset_right = 168.0
+offset_bottom = 157.0
+theme_override_colors/font_color = Color(0.458824, 0.129412, 0.141176, 1)
+theme_override_font_sizes/font_size = 3
+text = "
+Wispy Sprites"
+horizontal_alignment = 1
+
+[node name="Label9" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 116.0
+offset_right = 128.0
+offset_bottom = 139.0
+theme_override_colors/font_color = Color(0.458824, 0.129412, 0.141176, 1)
+theme_override_font_sizes/font_size = 3
+text = "
+UI Texture Assets"
+horizontal_alignment = 1
+
+[node name="Label15" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 124.0
+offset_right = 206.0
+offset_bottom = 147.0
+theme_override_font_sizes/font_size = 3
+text = "
+Craftpix.net on itch.io"
+horizontal_alignment = 1
+
+[node name="Label16" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 116.0
+offset_right = 205.0
+offset_bottom = 139.0
+theme_override_colors/font_color = Color(0.458824, 0.129412, 0.141176, 1)
+theme_override_font_sizes/font_size = 3
+text = "
+Animal Sprites"
+horizontal_alignment = 1
+
+[node name="Label10" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 96.0
+offset_right = 206.0
+offset_bottom = 119.0
+theme_override_colors/font_color = Color(0.458824, 0.129412, 0.141176, 1)
+theme_override_font_sizes/font_size = 3
+text = "
+Game Texture Assets"
+horizontal_alignment = 1
+
+[node name="Label11" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = -5.0
+offset_top = 96.0
+offset_right = 127.0
+offset_bottom = 119.0
+theme_override_colors/font_color = Color(0.458824, 0.129412, 0.141176, 1)
+theme_override_font_sizes/font_size = 3
+text = "
+Player Sprite Assets"
+horizontal_alignment = 1
+
+[node name="Label12" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 59.0
+offset_right = 169.0
+offset_bottom = 82.0
+theme_override_colors/font_color = Color(0.458824, 0.129412, 0.141176, 1)
+text = "
+Gameplay Music"
+horizontal_alignment = 1
+
+[node name="Label13" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 33.0
+offset_right = 169.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0.458824, 0.129412, 0.141176, 1)
+text = "
+Main Menu Music"
+horizontal_alignment = 1
+
+[node name="Label14" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 8.0
+offset_right = 169.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0.458824, 0.129412, 0.141176, 1)
+text = "
+A Game by"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 28.0
+offset_right = 174.0
+offset_bottom = 36.0
+texture = ExtResource("3_bkryh")
+
+[node name="TextureRect2" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 89.0
+offset_right = 174.0
+offset_bottom = 97.0
+texture = ExtResource("3_bkryh")
+flip_h = true
+flip_v = true
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 158.0
+offset_right = 315.0
+offset_bottom = 177.0
+theme = ExtResource("5_lfe2l")
+theme_override_font_sizes/font_size = 10
+text = "Back"

@@ -1,0 +1,87 @@
+[gd_scene load_steps=8 format=3 uid="uid://b2ac3t1gew8xb"]
+
+[ext_resource type="Texture2D" uid="uid://cgv2bexklvgyh" path="res://Assets/Textures/uibanner.png" id="1_65uny"]
+[ext_resource type="Script" path="res://Scripts/victory_screen.gd" id="1_t4nhh"]
+[ext_resource type="FontFile" uid="uid://bf4148820ipgg" path="res://Assets/prstart.ttf" id="2_0ys6t"]
+[ext_resource type="Theme" uid="uid://b806d6t2kh6bk" path="res://Resources/Main_menu_theme.tres" id="2_2jpgq"]
+[ext_resource type="Texture2D" uid="uid://brpppdsbai25v" path="res://Assets/Textures/Decorations/curtain_red_1.png" id="5_j36se"]
+[ext_resource type="Texture2D" uid="uid://bk04unmhh61ak" path="res://Assets/Textures/Decorations/curtain_red_2.png" id="6_fn0ks"]
+[ext_resource type="Texture2D" uid="uid://n1lijkg2rnab" path="res://Assets/Textures/Decorations/flag_red.png" id="7_jk5ht"]
+
+[node name="Victory_Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t4nhh")
+
+[node name="Restart" type="Button" parent="."]
+process_mode = 3
+z_index = 4
+layout_mode = 0
+offset_left = 35.0
+offset_top = 32.0
+offset_right = 109.0
+offset_bottom = 51.0
+theme = ExtResource("2_2jpgq")
+theme_override_font_sizes/font_size = 6
+action_mode = 0
+text = "Try Again"
+
+[node name="Finish" type="Button" parent="."]
+process_mode = 3
+z_index = 4
+layout_mode = 0
+offset_left = 34.0
+offset_top = 57.0
+offset_right = 108.0
+offset_bottom = 76.0
+theme = ExtResource("2_2jpgq")
+theme_override_font_sizes/font_size = 6
+action_mode = 0
+text = "Quit"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+z_index = 3
+layout_mode = 0
+offset_left = 11.0
+offset_top = 4.0
+offset_right = 131.0
+offset_bottom = 98.0
+texture = ExtResource("1_65uny")
+patch_margin_left = 9
+patch_margin_top = 9
+patch_margin_right = 9
+patch_margin_bottom = 8
+
+[node name="Label" type="Label" parent="."]
+z_index = 4
+layout_mode = 0
+offset_left = -1.0
+offset_top = 8.0
+offset_right = 149.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0.47451, 0.262745, 0.223529, 1)
+theme_override_fonts/font = ExtResource("2_0ys6t")
+theme_override_font_sizes/font_size = 7
+text = "Game Completed!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CurtainRed1" type="Sprite2D" parent="."]
+position = Vector2(17, 53)
+texture = ExtResource("5_j36se")
+
+[node name="CurtainRed2" type="Sprite2D" parent="."]
+position = Vector2(125, 53)
+texture = ExtResource("6_fn0ks")
+
+[node name="FlagRed" type="Sprite2D" parent="."]
+z_index = 4
+position = Vector2(70, 120)
+texture = ExtResource("7_jk5ht")
+
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Finish" to="." method="_on_finish_pressed"]

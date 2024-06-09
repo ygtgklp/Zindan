@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://ba4n0bavu1apk"]
+
+[ext_resource type="PackedScene" uid="uid://brc83g5eg2rwd" path="res://Scenes/peggy.tscn" id="1_q6grp"]
+
+[node name="peggy" instance=ExtResource("1_q6grp")]
+
+[node name="NinePatchRect" parent="." index="2"]
+offset_right = 70.0
+
+[node name="RichTextLabel" parent="NinePatchRect" index="0"]
+text = "Thank you
+for playing!"

@@ -1,0 +1,93 @@
+[gd_scene load_steps=5 format=3 uid="uid://pj1m6mcidg8n"]
+
+[ext_resource type="Theme" uid="uid://b806d6t2kh6bk" path="res://Resources/Main_menu_theme.tres" id="1_jntt6"]
+[ext_resource type="PackedScene" uid="uid://cj0lxkxh3xmj0" path="res://Scenes/auido_slider_settings.tscn" id="2_8074l"]
+[ext_resource type="PackedScene" uid="uid://bn1vd7ikw6gbj" path="res://Scenes/window_mode_button.tscn" id="3_3wps1"]
+[ext_resource type="PackedScene" uid="uid://bbgbh754d0huw" path="res://Scenes/resolution_button.tscn" id="4_ypvbi"]
+
+[node name="Settings_Tab_Container" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_jntt6")
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(300, 120)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -113.0
+offset_top = -72.0
+offset_right = 187.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.774189, 1.13026)
+
+[node name="Auido_Slider_Settings" parent="Panel" instance=ExtResource("2_8074l")]
+layout_mode = 1
+offset_left = 20.6668
+offset_top = 15.9255
+offset_right = 20.6668
+offset_bottom = 15.9255
+scale = Vector2(0.419057, 0.161781)
+
+[node name="Auido_Slider_Settings2" parent="Panel" instance=ExtResource("2_8074l")]
+layout_mode = 1
+offset_left = 20.6668
+offset_top = 35.39
+offset_right = 20.6668
+offset_bottom = 35.3899
+scale = Vector2(0.417312, 0.180715)
+bus_name = "Music"
+
+[node name="Auido_Slider_Settings3" parent="Panel" instance=ExtResource("2_8074l")]
+layout_mode = 1
+offset_left = 21.9585
+offset_top = 58.3934
+offset_right = 21.9585
+offset_bottom = 58.3934
+scale = Vector2(0.414907, 0.166793)
+bus_name = "SFX"
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 52.9587
+offset_top = 5.30849
+offset_right = 92.9587
+offset_bottom = 21.3085
+theme_override_colors/font_color = Color(0.443137, 0.258824, 0.137255, 1)
+theme_override_font_sizes/font_size = 10
+text = "Sound"
+
+[node name="Label2" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 187.293
+offset_top = 5.30849
+offset_right = 267.293
+offset_bottom = 21.3085
+theme_override_colors/font_color = Color(0.443137, 0.258824, 0.137255, 1)
+theme_override_font_sizes/font_size = 10
+text = "Graphics"
+
+[node name="Window_Mode_Button" parent="Panel" instance=ExtResource("3_3wps1")]
+layout_mode = 1
+offset_left = 178.251
+offset_top = 9.73227
+offset_right = 202.251
+offset_bottom = 24.7323
+scale = Vector2(0.328823, 0.29439)
+
+[node name="Resolution_Button" parent="Panel" instance=ExtResource("4_ypvbi")]
+layout_mode = 1
+offset_left = 179.543
+offset_top = 58.3936
+offset_right = 179.543
+offset_bottom = 58.3936
+scale = Vector2(0.254453, 0.275939)

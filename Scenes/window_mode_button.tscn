@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bn1vd7ikw6gbj"]
+
+[ext_resource type="PackedScene" uid="uid://vnyq4nrq75no" path="res://Scenes/display_button.tscn" id="1_vb1uw"]
+[ext_resource type="Script" path="res://Scripts/window_mode_button.gd" id="2_q226d"]
+
+[node name="Window_Mode_Button" instance=ExtResource("1_vb1uw")]
+script = ExtResource("2_q226d")
+
+[node name="Label" parent="." index="0"]
+offset_left = 36.0
+offset_top = 68.0
+offset_right = 122.0
+offset_bottom = 91.0
+theme_override_colors/font_color = Color(0.411765, 0.239216, 0.14902, 1)
+text = "Display
+"
+
+[node name="OptionButton" parent="." index="1"]
+offset_left = 38.0
+offset_top = 95.0
+offset_right = 153.0
+offset_bottom = 127.0
+scale = Vector2(0.779806, 0.740104)
+theme_override_colors/font_color = Color(0.423529, 0.215686, 0.133333, 1)

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://vnyq4nrq75no"]
+
+[node name="Display_Button" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 24.0
+offset_right = 103.0
+offset_bottom = 47.0
+text = "Base_Label"
+
+[node name="OptionButton" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 141.0
+offset_top = 25.0
+offset_right = 186.0
+offset_bottom = 45.0

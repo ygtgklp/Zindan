@@ -1,0 +1,68 @@
+[gd_scene load_steps=14 format=3 uid="uid://cbkky5ix4c4mr"]
+
+[ext_resource type="Texture2D" uid="uid://d2ivq4plq3n6y" path="res://Assets/Textures/Decorations/Animated Decorations/torch_small/torch_small_1.png" id="1_fxdlv"]
+[ext_resource type="Texture2D" uid="uid://bfwacnb1dvwt1" path="res://Assets/Textures/Decorations/Animated Decorations/torch_big/torch_big_1.png" id="1_oqsy1"]
+[ext_resource type="Texture2D" uid="uid://ccqin12i0tk1f" path="res://Assets/Textures/Decorations/Animated Decorations/torch_small/torch_small_2.png" id="2_6f2v2"]
+[ext_resource type="Texture2D" uid="uid://lrxxddof0bq3" path="res://Assets/Textures/Decorations/Animated Decorations/torch_big/torch_big_2.png" id="2_24fgt"]
+[ext_resource type="Texture2D" uid="uid://byuweqblpwyso" path="res://Assets/Textures/Decorations/Animated Decorations/torch_big/torch_big_3.png" id="3_tvmum"]
+[ext_resource type="Texture2D" uid="uid://b07i8hpi45v6w" path="res://Assets/Textures/Decorations/Animated Decorations/torch_small/torch_small_3.png" id="3_u0f04"]
+[ext_resource type="Texture2D" uid="uid://bpjhrp6xh6y7f" path="res://Assets/Textures/Decorations/Animated Decorations/torch_big/torch_big_4.png" id="4_4qqsf"]
+[ext_resource type="Texture2D" uid="uid://dbgcrk3rhuxeq" path="res://Assets/Textures/Decorations/Animated Decorations/torch_small/torch_small_4.png" id="4_5jl3x"]
+[ext_resource type="Texture2D" uid="uid://bse1l5fa5m5tm" path="res://Assets/Textures/Decorations/Animated Decorations/torch_small/torch_small_5.png" id="5_240mk"]
+[ext_resource type="Texture2D" uid="uid://uefc4pl3l7fy" path="res://Assets/Textures/Decorations/Animated Decorations/torch_big/torch_big_5.png" id="5_w0rwi"]
+[ext_resource type="Texture2D" uid="uid://c6qtip6bftnhl" path="res://Assets/Textures/Decorations/Animated Decorations/torch_big/torch_big_6.png" id="6_m0jvs"]
+[ext_resource type="Texture2D" uid="uid://blmpvfaslajnx" path="res://Assets/Textures/Decorations/Animated Decorations/torch_small/torch_small_6.png" id="6_twsat"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_prrim"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_oqsy1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_24fgt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_tvmum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4qqsf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_w0rwi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_m0jvs")
+}],
+"loop": true,
+"name": &"torch_big",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fxdlv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6f2v2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_u0f04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5jl3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_240mk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_twsat")
+}],
+"loop": true,
+"name": &"torch_small",
+"speed": 12.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_prrim")
+animation = &"torch_big"
+frame_progress = 0.33273

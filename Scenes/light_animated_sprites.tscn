@@ -1,0 +1,154 @@
+[gd_scene load_steps=32 format=3 uid="uid://cm0rkwmkh5j0i"]
+
+[ext_resource type="Texture2D" uid="uid://d3ug3j6mni3o0" path="res://Assets/Textures/Decorations/Animated Decorations/candelabrum_small/candelabrum_small_1.png" id="1_25epg"]
+[ext_resource type="Texture2D" uid="uid://bus7h7adli2oa" path="res://Assets/Textures/Decorations/Animated Decorations/candelabrum_small/candelabrum_small_2.png" id="2_rwhxq"]
+[ext_resource type="Texture2D" uid="uid://cfmqni8kcu3n2" path="res://Assets/Textures/Decorations/Animated Decorations/candelabrum_small/candelabrum_small_3.png" id="3_fju0c"]
+[ext_resource type="Texture2D" uid="uid://m1nejn0u3bkm" path="res://Assets/Textures/Decorations/Animated Decorations/candelabrum_small/candelabrum_small_4.png" id="4_a4gt2"]
+[ext_resource type="Texture2D" uid="uid://c2yq6a1fwk1d" path="res://Assets/Textures/Decorations/Animated Decorations/candelabrum_small/candelabrum_small_5.png" id="5_6kubm"]
+[ext_resource type="Texture2D" uid="uid://cjrvc43wjuuad" path="res://Assets/Textures/Decorations/Animated Decorations/candelabrum_small/candelabrum_small_6.png" id="6_0t5aa"]
+[ext_resource type="Texture2D" uid="uid://cuqxuco6ujvtm" path="res://Assets/Textures/Decorations/Animated Decorations/candelabrum_tall/candelabrum_tall_1.png" id="7_n8yma"]
+[ext_resource type="Texture2D" uid="uid://l66bgrad5hnc" path="res://Assets/Textures/Decorations/Animated Decorations/candelabrum_tall/candelabrum_tall_2.png" id="8_871l3"]
+[ext_resource type="Texture2D" uid="uid://b5k7iu3dcgjm2" path="res://Assets/Textures/Decorations/Animated Decorations/candelabrum_tall/candelabrum_tall_3.png" id="9_mhnvg"]
+[ext_resource type="Texture2D" uid="uid://bron81pnth818" path="res://Assets/Textures/Decorations/Animated Decorations/candelabrum_tall/candelabrum_tall_4.png" id="10_dd471"]
+[ext_resource type="Texture2D" uid="uid://6j4su58ikajy" path="res://Assets/Textures/Decorations/Animated Decorations/candelabrum_tall/candelabrum_tall_5.png" id="11_2dfhs"]
+[ext_resource type="Texture2D" uid="uid://dj4ubmlkaw4nt" path="res://Assets/Textures/Decorations/Animated Decorations/candelabrum_tall/candelabrum_tall_6.png" id="12_hkk7b"]
+[ext_resource type="Texture2D" uid="uid://bewgpit7oh5qy" path="res://Assets/Textures/Decorations/Animated Decorations/candle_1/candle_1_1.png" id="13_11857"]
+[ext_resource type="Texture2D" uid="uid://esikoomd600h" path="res://Assets/Textures/Decorations/Animated Decorations/candle_1/candle_1_2.png" id="14_aqn8o"]
+[ext_resource type="Texture2D" uid="uid://c4g6a02rapge8" path="res://Assets/Textures/Decorations/Animated Decorations/candle_1/candle_1_3.png" id="15_ujw3m"]
+[ext_resource type="Texture2D" uid="uid://cknw0nqo8hyud" path="res://Assets/Textures/Decorations/Animated Decorations/candle_1/candle_1_4.png" id="16_bd0nf"]
+[ext_resource type="Texture2D" uid="uid://cnpgw4p154rbi" path="res://Assets/Textures/Decorations/Animated Decorations/candle_1/candle_1_5.png" id="17_fk235"]
+[ext_resource type="Texture2D" uid="uid://dorqkmpb5nqt3" path="res://Assets/Textures/Decorations/Animated Decorations/candle_1/candle_1_6.png" id="18_k088n"]
+[ext_resource type="Texture2D" uid="uid://53etan266b72" path="res://Assets/Textures/Decorations/Animated Decorations/candle_2/candle_2_1.png" id="19_wexs6"]
+[ext_resource type="Texture2D" uid="uid://dd400ififgin2" path="res://Assets/Textures/Decorations/Animated Decorations/candle_2/candle_2_2.png" id="20_qrrax"]
+[ext_resource type="Texture2D" uid="uid://dxx4d8fymk1ll" path="res://Assets/Textures/Decorations/Animated Decorations/candle_2/candle_2_3.png" id="21_njqad"]
+[ext_resource type="Texture2D" uid="uid://b8nj7n15j4my5" path="res://Assets/Textures/Decorations/Animated Decorations/candle_2/candle_2_4.png" id="22_svl8s"]
+[ext_resource type="Texture2D" uid="uid://c4g5bapnfbbfe" path="res://Assets/Textures/Decorations/Animated Decorations/candle_2/candle_2_5.png" id="23_2phli"]
+[ext_resource type="Texture2D" uid="uid://cdbsiak4si80q" path="res://Assets/Textures/Decorations/Animated Decorations/candle_2/candle_2_6.png" id="24_8lxnd"]
+[ext_resource type="Texture2D" uid="uid://ckesg4w3dk5au" path="res://Assets/Textures/Decorations/Animated Decorations/candle_3/candle_3_1.png" id="25_vat20"]
+[ext_resource type="Texture2D" uid="uid://6b3c7lywk7vy" path="res://Assets/Textures/Decorations/Animated Decorations/candle_3/candle_3_2.png" id="26_8k0k3"]
+[ext_resource type="Texture2D" uid="uid://b26oqmmbavh2o" path="res://Assets/Textures/Decorations/Animated Decorations/candle_3/candle_3_3.png" id="27_bparq"]
+[ext_resource type="Texture2D" uid="uid://v1tviwv10sfl" path="res://Assets/Textures/Decorations/Animated Decorations/candle_3/candle_3_4.png" id="28_xwik1"]
+[ext_resource type="Texture2D" uid="uid://bv0efqikjc4w5" path="res://Assets/Textures/Decorations/Animated Decorations/candle_3/candle_3_5.png" id="29_it6m6"]
+[ext_resource type="Texture2D" uid="uid://cn14k0ysflypj" path="res://Assets/Textures/Decorations/Animated Decorations/candle_3/candle_3_6.png" id="30_wwnm1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nfxhe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_25epg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_rwhxq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fju0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_a4gt2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_6kubm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_0t5aa")
+}],
+"loop": true,
+"name": &"candekabrum_small",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_n8yma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_871l3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_mhnvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_dd471")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_2dfhs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_hkk7b")
+}],
+"loop": true,
+"name": &"candelabrum_tall",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_11857")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_aqn8o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ujw3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_bd0nf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_fk235")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_k088n")
+}],
+"loop": true,
+"name": &"candle_1",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_wexs6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_qrrax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_njqad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_svl8s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_2phli")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_8lxnd")
+}],
+"loop": true,
+"name": &"candle_2",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_vat20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_8k0k3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_bparq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_xwik1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_it6m6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_wwnm1")
+}],
+"loop": true,
+"name": &"candle_3",
+"speed": 12.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_nfxhe")
+animation = &"candle_2"

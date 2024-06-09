@@ -1,0 +1,208 @@
+[gd_scene load_steps=20 format=3 uid="uid://d0twfb0dkymmo"]
+
+[ext_resource type="Texture2D" uid="uid://c4urw58262t1x" path="res://Assets/Zindan Title.png" id="1_6k2g8"]
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_npif7"]
+[ext_resource type="FontFile" uid="uid://bf4148820ipgg" path="res://Assets/prstart.ttf" id="2_gbe00"]
+[ext_resource type="Theme" uid="uid://b806d6t2kh6bk" path="res://Resources/Main_menu_theme.tres" id="3_wyi5u"]
+[ext_resource type="Texture2D" uid="uid://cgv2bexklvgyh" path="res://Assets/Textures/uibanner.png" id="5_xta4v"]
+[ext_resource type="Texture2D" uid="uid://cdh1qllsdnong" path="res://Assets/Textures/01 background.png" id="6_3uudu"]
+[ext_resource type="Script" path="res://Scripts/ParallaxBackground.gd" id="6_7ip1r"]
+[ext_resource type="Texture2D" uid="uid://bbvrung2eg8po" path="res://Assets/Textures/02 background.png" id="7_e5nee"]
+[ext_resource type="Texture2D" uid="uid://cvc010nbb6dum" path="res://Assets/Textures/03 background B.png" id="8_qw2ht"]
+[ext_resource type="Texture2D" uid="uid://ddi5hveja8o1n" path="res://Assets/Textures/04 background.png" id="9_35g7d"]
+[ext_resource type="Texture2D" uid="uid://bk31vqt68ycgp" path="res://Assets/Textures/05 background.png" id="10_12m4n"]
+[ext_resource type="AudioStream" uid="uid://cit1xd2mavpna" path="res://Assets/Rolemusic - The White Kitty.mp3" id="12_6k1tt"]
+[ext_resource type="PackedScene" uid="uid://bbqoxra1epddu" path="res://Scenes/options_menu.tscn" id="13_u2s77"]
+[ext_resource type="PackedScene" uid="uid://b3r1g6e70eckj" path="res://Scenes/credits.tscn" id="14_817qx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w4222"]
+atlas = ExtResource("1_6k2g8")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gusbq"]
+atlas = ExtResource("1_6k2g8")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qm30k"]
+atlas = ExtResource("1_6k2g8")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ltvwc"]
+atlas = ExtResource("1_6k2g8")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v15ay"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w4222")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gusbq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qm30k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ltvwc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ltvwc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qm30k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gusbq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w4222")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Main_Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_npif7")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 60
+
+[node name="Separator" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MarginContainer/VBoxContainer"]
+position = Vector2(148, 17)
+scale = Vector2(2.33708, 2.30972)
+sprite_frames = SubResource("SpriteFrames_v15ay")
+autoplay = "default"
+frame_progress = 0.533703
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+theme = ExtResource("3_wyi5u")
+theme_override_constants/separation = 5
+alignment = 2
+
+[node name="Separator" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Start" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_gbe00")
+text = "Start"
+
+[node name="Options" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_gbe00")
+theme_override_font_sizes/font_size = 10
+text = "Options"
+
+[node name="Credits" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_gbe00")
+theme_override_font_sizes/font_size = 10
+text = "Credits"
+
+[node name="Quit" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(64, 16)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_gbe00")
+theme_override_font_sizes/font_size = 10
+text = "Quit"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+z_index = -1
+layout_mode = 2
+offset_left = 118.0
+offset_top = 52.0
+offset_right = 204.0
+offset_bottom = 84.0
+scale = Vector2(0.98203, 3.82709)
+texture = ExtResource("5_xta4v")
+region_rect = Rect2(0, 0, 48, 48)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+script = ExtResource("6_7ip1r")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(5.96046e-08, 0)
+scale = Vector2(0.751174, 0.46875)
+texture = ExtResource("6_3uudu")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.3, 0.3)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+scale = Vector2(0.751174, 0.46875)
+texture = ExtResource("7_e5nee")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+scale = Vector2(0.751174, 0.46875)
+texture = ExtResource("8_qw2ht")
+centered = false
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.7, 0.7)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+scale = Vector2(0.751174, 0.46875)
+texture = ExtResource("9_35g7d")
+centered = false
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
+scale = Vector2(0.751174, 0.46875)
+texture = ExtResource("10_12m4n")
+centered = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_6k1tt")
+autoplay = true
+bus = &"Music"
+
+[node name="Options_Menu" parent="." instance=ExtResource("13_u2s77")]
+visible = false
+layout_mode = 1
+
+[node name="Credits" parent="." instance=ExtResource("14_817qx")]
+visible = false
+layout_mode = 1

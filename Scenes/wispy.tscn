@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfxx6vgjxpdl2"]
+
+[ext_resource type="PackedScene" uid="uid://dcybodfvypdf" path="res://Scenes/kill_box.tscn" id="11_oi4ok"]
+
+[node name="Wispy" type="AnimatableBody2D"]
+scale = Vector2(0.333, 0.333)
+
+[node name="KillBox" parent="." instance=ExtResource("11_oi4ok")]
+position = Vector2(75, 74)
+scale = Vector2(1.59015, 2.21462)

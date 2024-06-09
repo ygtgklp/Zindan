@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://2vac5co5h0mt"]
+
+[ext_resource type="PackedScene" uid="uid://clv5dk0upb1vv" path="res://Scenes/graves.tscn" id="1_lonl4"]
+
+[node name="graves" instance=ExtResource("1_lonl4")]
+
+[node name="NinePatchRect" parent="." index="2"]
+offset_left = -63.0
+offset_top = -44.0
+offset_right = 74.0
+
+[node name="RichTextLabel" parent="NinePatchRect" index="0"]
+offset_left = 7.93202
+offset_top = 5.29036
+offset_right = 122.932
+offset_bottom = 20.2904
+text = "Congratulations!"
